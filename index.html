@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./styles.css"
+
+</head>
+<body>
+    <!-- navbar -->
+    <div class="nav" id="nav"> 
+        <div>
+            <img src="images/logo.png" class="logo" />
+        </div>
+        <div class="nav-items">
+            <h4 class="nav-item">Home</h4>
+            <h4 class="nav-item">TV Shows</h4>
+            <h4 class="nav-item">Movies</h4>
+
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="banner"> 
+        <div class="banner-contents">
+            <h1 class="banner-title">The Last Of Us</h1>
+            <div class="banner-buttons">
+                <button class="banner-button">Play</button>
+                <button class="banner-button">More info</button>
+            </div>
+        </div>
+        <div class="banner-fadeBottom"></div>
+    </div>
+
+    <!-- netflix originals row -->
+    <div class="row"> 
+        <h1 class="row-title">Netflix Originals</h1>
+        <div class="row-posters">
+            <img src="./images/row_poster1.jpeg" alt="image"  class="row-poster" />
+            <img src="./images/row_poster2.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster1.jpeg" alt="image"  class="row-poster" />
+            <img src="./images/row_poster2.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+        </div>
+    </div>
+    <!-- trending row -->
+    <div class="row"> 
+        <h1 class="row-title">Trending now</h1>
+        <div class="row-posters">
+            <img src="./images/row_poster1.jpeg" alt="image"  class="row-poster" />
+            <img src="./images/row_poster2.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+        </div>
+    </div>
+    <!-- top rated -->
+    <div class="row"> 
+        <h1 class="row-title">Top Rated</h1>
+        <div class="row-posters">
+            <img src="./images/row_poster1.jpeg" alt="image"  class="row-poster" />
+            <img src="./images/row_poster2.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+        </div>
+    </div>
+
+    <script>
+        const nav = document.getElementById("nav")
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >= 100) {
+                nav.classList.add('nav-black')
+            } else {
+                nav.classList.remove('nav-black')
+            }
+        })
+    </script>
+
+</body>
+</html>

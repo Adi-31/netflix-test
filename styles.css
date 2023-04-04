@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #141414;
+}
+
+/* row styles */
+.row {
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -230px;
+    padding-left: 35px;
+}
+
+.row-posters {
+    /* background-color: orange; */
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+/* to not show the scrollbar in row section  */
+.row-posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row-poster {
+    width: 100%;
+    max-height: 120px;
+    /* background-color: aqua; */
+    transition: transform 450ms;
+    margin-right: 7px;
+    border-radius: 2px;
+    object-fit: contain;
+}
+
+.row-poster:hover{
+    transform: scale(1.08);
+}
+
+.row-title {
+    color: white;
+    font-size: 25px;
+}
+
+/* banner styles  */
+
+.banner {
+    background-image:url('./images/banner_img.jpeg');
+    background-size: cover;
+    background-position: center center;
+    object-fit: contain;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.banner-contents {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+    height: 190px;
+    /* width: 400px; */
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+}
+
+.banner-title {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.banner-buttons {
+    display: flex;
+    /* margin-top: 10px; */
+}
+.banner-button{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: .2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: rgba(51,51,51,.5);
+    height: 40px;
+    width: 35%
+}
+
+.banner-button:hover{
+    color: #000;
+    text-align: center;
+    background-color:#e6e6e6;
+}
+
+.banner-fadeBottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 16.4rem;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.8),#111);
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    z-index: 4;
+    color: white
+}
+.logo {
+    width: 120px;
+    max-height: 34px;
+    margin-left: 12px;
+    margin-right: 35px;
+}
+.nav-items {
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 12px;
+}
+
+.nav-black {
+    background-color: #000;
+}
