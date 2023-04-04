@@ -1,7 +1,7 @@
 1. Start by creating a blank HTML template
 
-```html
+````html
 <body>
 fkjdhglkjfdhgljk
 </body>
-```
+````
