@@ -19,10 +19,10 @@
     ```
     ```css
     body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #141414
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #141414
     }
     .myBlueBox {
         height: 120px;
@@ -71,9 +71,9 @@
     ```
      ```css
     .outer-container {
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
+        background-color: orange;
+        display: flex;
+        flex-direction: column;
     }
     ```
 
@@ -112,7 +112,7 @@
     }
     ```
 
-/////////////
+<!-- creating an overall architecture -->
 
 8. Try to create an overall architecture
 
@@ -142,9 +142,9 @@
     ```
     ```css
     .row {
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
+        background-color: orange;
+        display: flex;
+        flex-direction: column;
     }
     .row-posters {
         display: flex;
@@ -162,9 +162,7 @@
     }
     ```
 
-
-
-//// banner
+<!-- banner -->
 10. Add an image for the banner and make it fullscreen
 
     ```html
@@ -200,14 +198,14 @@
     ```
     ```css
     .banner-contents {
-    display: flex;
-    flex-direction: column;
-    /* background-color: aquamarine; */
-    height: 190px;
-    /* width: 400px; */
-    padding-left: 20px;
-    position: absolute;
-    top: 25%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: aquamarine; */
+        height: 190px;
+        /* width: 400px; */
+        padding-left: 20px;
+        position: absolute;
+        top: 25%;
     }
     ```
 
@@ -215,11 +213,11 @@
 
     ```css
     .row {
-    /* background-color: orange; */
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: -230px
+        /* background-color: orange; */
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -230px
     }
     ```
 
@@ -227,12 +225,12 @@
 
      ```css
     .row {
-    /* background-color: orange; */
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: -230px;
-    padding: 35px;
+        /* background-color: orange; */
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -230px;
+        padding: 35px;
     }
     ```
 
@@ -253,8 +251,8 @@
 
     ```css
     .banner-title {
-    font-size: 3.5rem;
-    color: white;
+        font-size: 3.5rem;
+        color: white;
     }
     .banner-buttons {
         display: flex;
@@ -277,6 +275,43 @@
         background-color: rgba(51,51,51,.5);
         height: 40px;
         width: 35%
+    }
+    ```
+
+15. Create the navbar 
+
+    ```html
+    <div class="nav" id="nav"> 
+        <img src="images/logo.png" class="logo" />
+        <div class="nav-items">
+            <h4 class="nav-item">Home</h4>
+            <h4 class="nav-item">TV Shows</h4>
+            <h4 class="nav-item">Movies</h4>
+
+        </div>
+    </div>
+    ```
+    ```css
+    .nav {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        align-items: center;
+        z-index: 4;
+        color: white
+    }
+    .logo {
+        width: 120px;
+        max-height: 34px;
+        margin-left: 12px;
+        margin-right: 35px;
+    }
+    .nav-items {
+        display: flex;
+    }
+
+    .nav-item {
+        margin-right: 12px;
     }
     ```
 
