@@ -10,14 +10,17 @@
 </head>
 <body>
     <!-- navbar -->
-    <div class="nav" id="nav"> 
-        <img src="images/logo.png" class="logo" />
-        <div class="nav-items">
+    <div class="nav" id="nav">
+        <img src="./images/logo.png" class="logo"/>
+        <div class="nav-contents">
             <h4 class="nav-item">Home</h4>
             <h4 class="nav-item">TV Shows</h4>
             <h4 class="nav-item">Movies</h4>
-
+            <h4 class="nav-item">New & Popular</h4>
+            <h4 class="nav-item">My List</h4>
         </div>
+        <img src="./images/cute-blahaj.jpg" class="avatar" />
+
     </div>
 
     <!-- banner -->
@@ -25,7 +28,7 @@
         <div class="banner-contents">
             <h1 class="banner-title">The Last Of Us</h1>
             <div class="banner-buttons">
-                <button class="banner-button">Play</button>
+                <button class="banner-button" id="play-button">Play</button>
                 <button class="banner-button">More info</button>
             </div>
         </div>
@@ -42,12 +45,9 @@
             <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
             <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
             <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
-            <img src="./images/row_poster1.jpeg" alt="image"  class="row-poster" />
-            <img src="./images/row_poster2.jpeg" alt="image" class="row-poster" />
-            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
-            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
-            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
-            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster7.jpeg" alt="image"  class="row-poster" />
+            <img src="./images/row_poster8.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster9.jpeg" alt="image"  class="row-poster"/>
         </div>
     </div>
 
@@ -55,22 +55,90 @@
     <div class="row"> 
         <h1 class="row-title">Trending now</h1>
         <div class="row-posters">
-            <img src="./images/row_poster1.jpeg" alt="image"  class="row-poster" />
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster8.jpeg" alt="image" class="row-poster" />
             <img src="./images/row_poster2.jpeg" alt="image" class="row-poster" />
-            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
-            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster9.jpeg" alt="image"  class="row-poster"/>
             <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster7.jpeg" alt="image"  class="row-poster" />
             <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
-            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
-            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
-            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
-            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster1.jpeg" alt="image"  class="row-poster" />
         </div>
     </div>
 
     <!-- top rated -->
     <div class="row"> 
         <h1 class="row-title">Top Rated</h1>
+        <div class="row-posters">
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster1.jpeg" alt="image"  class="row-poster" />
+            <img src="./images/row_poster2.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+        </div>
+    </div>
+
+    <!-- Action movies -->
+    <div class="row"> 
+        <h1 class="row-title">Action movies</h1>
+        <div class="row-posters">
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster1.jpeg" alt="image"  class="row-poster" />
+            <img src="./images/row_poster2.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+        </div>
+    </div>
+
+    <!-- Comedy movies -->
+    <div class="row"> 
+        <h1 class="row-title">Comedy movies</h1>
+        <div class="row-posters">
+            <img src="./images/row_poster8.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster1.jpeg" alt="image"  class="row-poster" />
+            <img src="./images/row_poster2.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+        </div>
+    </div>
+
+    <!-- Horror movies  -->
+    <div class="row"> 
+        <h1 class="row-title">Horror movies</h1>
+        <div class="row-posters">
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster" />
+            <img src="./images/row_poster2.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster3.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster4.jpeg" alt="image" class="row-poster" />
+            <img src="./images/row_poster9.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster5.jpeg" alt="image"  class="row-poster"/>
+            <img src="./images/row_poster6.jpeg" alt="image"  class="row-poster"/>
+        </div>
+    </div>
+
+
+    <!-- Romance movies -->
+    <div class="row"> 
+        <h1 class="row-title">Romance movies</h1>
         <div class="row-posters">
             <img src="./images/row_poster1.jpeg" alt="image"  class="row-poster" />
             <img src="./images/row_poster2.jpeg" alt="image" class="row-poster" />

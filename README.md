@@ -156,7 +156,6 @@
     .row-poster {
         max-height: 120px;
         width: 100%;
-        /* background-color: aqua; */
         margin: 7px;
         object-fit: contain;
     }
@@ -200,9 +199,7 @@
     .banner-contents {
         display: flex;
         flex-direction: column;
-        /* background-color: aquamarine; */
         height: 190px;
-        /* width: 400px; */
         padding-left: 20px;
         position: absolute;
         top: 25%;
@@ -213,7 +210,6 @@
 
     ```css
     .row {
-        /* background-color: orange; */
         display: flex;
         flex-direction: column;
         position: relative;
@@ -225,7 +221,6 @@
 
      ```css
     .row {
-        /* background-color: orange; */
         display: flex;
         flex-direction: column;
         position: relative;
@@ -256,7 +251,6 @@
     }
     .banner-buttons {
         display: flex;
-        /* margin-top: 10px; */
     }
     .banner-button{
         cursor: pointer;
